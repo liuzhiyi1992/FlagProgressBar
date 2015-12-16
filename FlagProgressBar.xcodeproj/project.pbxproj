@@ -17,6 +17,7 @@
 		4806584E1C216F3C0093BC15 /* FlagProgressBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4806584D1C216F3C0093BC15 /* FlagProgressBarUITests.m */; };
 		4806585D1C2171560093BC15 /* ZYProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4806585C1C2171560093BC15 /* ZYProgressBar.m */; };
 		48FB53731C21B07D00CAF61F /* ZYProgressBarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FB53721C21B07D00CAF61F /* ZYProgressBarV2.m */; };
+		48FB53761C21BA7D00CAF61F /* display_one.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48FB53751C21BA7D00CAF61F /* display_one.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4806585C1C2171560093BC15 /* ZYProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgressBar.m; sourceTree = "<group>"; };
 		48FB53711C21B07D00CAF61F /* ZYProgressBarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProgressBarV2.h; sourceTree = "<group>"; };
 		48FB53721C21B07D00CAF61F /* ZYProgressBarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgressBarV2.m; sourceTree = "<group>"; };
+		48FB53751C21BA7D00CAF61F /* display_one.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = display_one.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		480658281C216F3C0093BC15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48FB53741C21BA7400CAF61F /* image */,
 				480658291C216F3C0093BC15 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -148,6 +151,14 @@
 				4806584F1C216F3C0093BC15 /* Info.plist */,
 			);
 			path = FlagProgressBarUITests;
+			sourceTree = "<group>";
+		};
+		48FB53741C21BA7400CAF61F /* image */ = {
+			isa = PBXGroup;
+			children = (
+				48FB53751C21BA7D00CAF61F /* display_one.gif */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				480658381C216F3C0093BC15 /* LaunchScreen.storyboard in Resources */,
 				480658351C216F3C0093BC15 /* Assets.xcassets in Resources */,
 				480658331C216F3C0093BC15 /* Main.storyboard in Resources */,
+				48FB53761C21BA7D00CAF61F /* display_one.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
