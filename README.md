@@ -8,7 +8,7 @@ a progress bar(index, volume) with above image flag, and bottom title flag if yo
 
 
 
-##**explain：**
+#**explain：**
 ####the key of dictionary:
 \#define KEY_FLAGIMAGE       @"KEY_FLAGIMAGE"          //UIImage
 \#define KEY_TITLE           @"KEY_TITLE"                			//NSString
@@ -56,7 +56,7 @@ NSDictionary *bottomFlagTitleDict = [NSDictionary dictionaryWithObjectsAndKeys:a
 
 
 
-##**usage：**
+#**usage：**
 The simplest method of use, add in or storyBoard xib ZYProgressBar, associated to. M file, so you will have a ZYProgressBar object, you can start the game happily!!
 >If you want it to be animated, use ZYProgressBarV2
 
@@ -77,4 +77,5 @@ bottomFlagTitleDictionary:(NSDictionary *)bottomFlagTitleDictionary;
 that all !  
 Your progressBar will work according to your rules。
 > If you intend to use ZYProgressBar in the code without xib, you have to create an initializer,and implement "configureDefault" method in ZYProgressBar.m
+
 ###thanks ! 
