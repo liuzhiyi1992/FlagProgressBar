@@ -19,9 +19,9 @@ a progress bar(index, volume) with above image flag, and bottom title flag if yo
 \#define KEY_ATTRIBUTED_STRING   @"KEY_ATTRIBUTED_STRING"//NSAttributedString
 
 ####PARA:
-*---iindex*：The total number of the progress bar
-*---ivolum*： The total number of the progress bar
-*---iholderBarColor*：bar backgroundcolor
+*$index*：The total number of the progress bar
+*$volum*： The total number of the progress bar
+*$holderBarColor*：bar backgroundcolor
 *---icontentBarColor*：bar contentcolor
 *---iimageTitleOffSet*：offset with the title in flagImage which above the progressBar(CGPoint)
 *---iimageTitleColor*：color with the title in flagImage which above the progressBar
