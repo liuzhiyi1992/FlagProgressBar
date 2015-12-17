@@ -19,13 +19,13 @@ a progress bar(index, volume) with above image flag, and bottom title flag if yo
 \#define KEY_ATTRIBUTED_STRING   @"KEY_ATTRIBUTED_STRING"//NSAttributedString
 
 ####PARA:
-*$index*：The total number of the progress bar
-*$volum*： The total number of the progress bar
-*$holderBarColor*：bar backgroundcolor
-*---icontentBarColor*：bar contentcolor
-*---iimageTitleOffSet*：offset with the title in flagImage which above the progressBar(CGPoint)
-*---iimageTitleColor*：color with the title in flagImage which above the progressBar
-*---iflagImageDictionaryList*：a NSArray with flagImage dictionaries（contains:KEY_FLAGIMAGE, KEY_TITLE,KEY_INDEX,KEY_OFFSET_X,KEY_OFFSET_Y） example:
+*index*：The total number of the progress bar
+*volum*： The total number of the progress bar
+*holderBarColor*：bar backgroundcolor
+*contentBarColor*：bar contentcolor
+*imageTitleOffSet*：offset with the title in flagImage which above the progressBar(CGPoint)
+*imageTitleColor*：color with the title in flagImage which above the progressBar
+*flagImageDictionaryList*：a NSArray with flagImage dictionaries（contains:KEY_FLAGIMAGE, KEY_TITLE,KEY_INDEX,KEY_OFFSET_X,KEY_OFFSET_Y） example:
 ```
 NSMutableDictionary *dict_one = [NSMutableDictionary dictionary];
 [dict_one setValue:[UIImage imageNamed:@"dialogButton_center_gray"] forKey:KEY_FLAGIMAGE];
@@ -47,7 +47,7 @@ UIImage *image = [UIImage imageNamed:@"dialogButton_right_gray"];
 NSArray *flagImageList = [NSArray arrayWithObjects:dict_one, dict_two, nil];
 ```
 
-*---ibottomFlagTitleDictionary*：a NSDictionary with bottomFlagTitle which bottom the progressBar. example:
+*bottomFlagTitleDictionary*：a NSDictionary with bottomFlagTitle which bottom the progressBar. example:
 
 ```
 NSDictionary *bottomFlagTitleDict = [NSDictionary dictionaryWithObjectsAndKeys:attributeStr, KEY_ATTRIBUTED_STRING, @"0", KEY_OFFSET_X, @"2", KEY_OFFSET_Y, nil];
