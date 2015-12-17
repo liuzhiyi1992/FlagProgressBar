@@ -65,13 +65,13 @@ then， begin configure with the update method like this:
 
 ```
 - (void)updateBarWithIndex:(int)index
-volum:(int)volum
-holderBarColor:(UIColor *)holderBarColor
-contentBarColor:(UIColor *)contentBarColor
-imageTitleOffSet:(CGPoint)imageTitleOffSet
-imageTitleColor:(UIColor *)imageTitleColor
-flagImageDictionaryList:(NSArray *)flagImageDictionaryList
-bottomFlagTitleDictionary:(NSDictionary *)bottomFlagTitleDictionary;
+                     volum:(int)volum
+            holderBarColor:(UIColor *)holderBarColor
+           contentBarColor:(UIColor *)contentBarColor
+          imageTitleOffSet:(CGPoint)imageTitleOffSet
+           imageTitleColor:(UIColor *)imageTitleColor
+   flagImageDictionaryList:(NSArray *)flagImageDictionaryList
+ bottomFlagTitleDictionary:(NSDictionary *)bottomFlagTitleDictionary;
 ```
 
 that all !  
