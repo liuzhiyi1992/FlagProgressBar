@@ -63,6 +63,7 @@
     
     [attributeStr addAttribute:NSForegroundColorAttributeName value:(id)volumColor.CGColor range:NSMakeRange(1, 2)];
     [attributeStr addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:12.0f] range:NSMakeRange(1, 2)];
+    
     NSDictionary *bottomFlagTitleDict = [NSDictionary dictionaryWithObjectsAndKeys:attributeStr, KEY_ATTRIBUTED_STRING, @"0", KEY_OFFSET_X, @"2", KEY_OFFSET_Y, nil];
     
     [self.firstProgressBar updateBarWithIndex:index-4 volum:volum holderBarColor:holderBarColor contentBarColor:contentBarColor imageTitleOffSet:CGPointMake(0, -2) imageTitleColor:[UIColor whiteColor] flagImageDictionaryList:nil bottomFlagTitleDictionary:nil];
