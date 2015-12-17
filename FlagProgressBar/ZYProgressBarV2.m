@@ -33,18 +33,20 @@
 
 @implementation ZYProgressBarV2
 
-//如需在非xib使用，补上init方法
+//if use not in xib, create an func init
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self configureDefault];
+}
+
+- (void)configureDefault {
     [self setBackgroundColor:[UIColor clearColor]];
-    
-    //TODO: default值，使用时请修改
+    //default值，使用时请修改
     self.volume = 6;
     self.index = 0;
     self.holderBarColor = [UIColor clearColor];
     self.imageTitleOffSet = CGPointMake(0, -2);
-    
-    //TODO:进度条初始位置
+    //进度条初始位置
     self.progressBarOriginY = self.bounds.size.height - HEIGHT_CELL;
 }
 
@@ -117,7 +119,7 @@
     //作画
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     UIBezierPath *path = [UIBezierPath bezierPath];
-    UIBezierPath *beginPath = [path copy];
+//    UIBezierPath *beginPath = [path copy];
     CGFloat pointY = _progressBarOriginY + 0.5 * HEIGHT_CELL;
     
     for (int i = 0; i < index; i ++) {
@@ -132,9 +134,12 @@
     shapeLayer.frame = self.bounds;
     shapeLayer.strokeColor = color.CGColor;
     shapeLayer.lineWidth = HEIGHT_CELL;
+    //裁剪圆角
+    CAShapeLayer *cutLayer = [CAShapeLayer layer];
+    cutLayer.path = cutPath.CGPath;
+    [shapeLayer setMask:cutLayer];
     
-    //    CGContextRestoreGState(self.context);
-    
+    //CAAnimation
     [CATransaction begin];
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
     shapeLayer.strokeEnd = 1.0f;
@@ -182,15 +187,6 @@
 }
 
 - (void)drawBottomFlagTitleWithAttributeString:(NSAttributedString *)attributeString offSet:(CGPoint)offSet {
-    
-    //TODO: 例子：写死
-    //    NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc] initWithString:@"4/6"];
-    //    [attributeStr addAttribute:NSForegroundColorAttributeName value:(id)[UIColor redColor].CGColor range:NSMakeRange(0, 1)];
-    //    [attributeStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10.0f] range:NSMakeRange(0, 1)];
-    //
-    //    [attributeStr addAttribute:NSForegroundColorAttributeName value:(id)[UIColor yellowColor].CGColor range:NSMakeRange(1, 2)];
-    //    [attributeStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10.0f] range:NSMakeRange(1, 2)];
-    
     
     CGSize titleSize = attributeString.size;
     CGFloat titleOriginX = [self cellOriginXWithCellWidth:_cellWidth Index:_index volume:_volume] - 0.5 * titleSize.width + offSet.x;
