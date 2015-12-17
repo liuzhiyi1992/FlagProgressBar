@@ -20,11 +20,17 @@ a progress bar(index, volume) with above image flag, and bottom title flag if yo
 
 ####PARA:
 *index*：The total number of the progress bar
+
 *volum*： The total number of the progress bar
+
 *holderBarColor*：bar backgroundcolor
+
 *contentBarColor*：bar contentcolor
+
 *imageTitleOffSet*：offset with the title in flagImage which above the progressBar(CGPoint)
+
 *imageTitleColor*：color with the title in flagImage which above the progressBar
+
 *flagImageDictionaryList*：a NSArray with flagImage dictionaries（contains:KEY_FLAGIMAGE, KEY_TITLE,KEY_INDEX,KEY_OFFSET_X,KEY_OFFSET_Y） example:
 ```
 NSMutableDictionary *dict_one = [NSMutableDictionary dictionary];
@@ -46,6 +52,7 @@ UIImage *image = [UIImage imageNamed:@"dialogButton_right_gray"];
 
 NSArray *flagImageList = [NSArray arrayWithObjects:dict_one, dict_two, nil];
 ```
+
 
 *bottomFlagTitleDictionary*：a NSDictionary with bottomFlagTitle which bottom the progressBar. example:
 
