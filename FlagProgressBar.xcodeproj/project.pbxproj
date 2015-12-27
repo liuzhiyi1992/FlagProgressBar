@@ -17,6 +17,7 @@
 		4806584E1C216F3C0093BC15 /* FlagProgressBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4806584D1C216F3C0093BC15 /* FlagProgressBarUITests.m */; };
 		4806585D1C2171560093BC15 /* ZYProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4806585C1C2171560093BC15 /* ZYProgressBar.m */; };
 		482F0DED1C228F31007B32EF /* display_two.gif in Resources */ = {isa = PBXBuildFile; fileRef = 482F0DEC1C228F31007B32EF /* display_two.gif */; };
+		48678D0B1C2FA4FE006421C5 /* main.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 48678D0A1C2FA4FE006421C5 /* main.min.css */; };
 		48FB53731C21B07D00CAF61F /* ZYProgressBarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FB53721C21B07D00CAF61F /* ZYProgressBarV2.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		4806585B1C2171560093BC15 /* ZYProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProgressBar.h; sourceTree = "<group>"; };
 		4806585C1C2171560093BC15 /* ZYProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgressBar.m; sourceTree = "<group>"; };
 		482F0DEC1C228F31007B32EF /* display_two.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = display_two.gif; sourceTree = "<group>"; };
+		48678D0A1C2FA4FE006421C5 /* main.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.min.css; path = ../main.min.css; sourceTree = "<group>"; };
 		48FB53711C21B07D00CAF61F /* ZYProgressBarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProgressBarV2.h; sourceTree = "<group>"; };
 		48FB53721C21B07D00CAF61F /* ZYProgressBarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgressBarV2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 		48FB53741C21BA7400CAF61F /* image */ = {
 			isa = PBXGroup;
 			children = (
+				48678D0A1C2FA4FE006421C5 /* main.min.css */,
 				482F0DEC1C228F31007B32EF /* display_two.gif */,
 			);
 			path = image;
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				480658381C216F3C0093BC15 /* LaunchScreen.storyboard in Resources */,
+				48678D0B1C2FA4FE006421C5 /* main.min.css in Resources */,
 				480658351C216F3C0093BC15 /* Assets.xcassets in Resources */,
 				480658331C216F3C0093BC15 /* Main.storyboard in Resources */,
 				482F0DED1C228F31007B32EF /* display_two.gif in Resources */,
