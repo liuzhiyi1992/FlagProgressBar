@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-Lz-eQI" customClass="ZYProgressBar">
                                 <rect key="frame" x="30" y="60" width="540" height="60"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8Hn-Wv-rs3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QOZ-SJ-hj2"/>
